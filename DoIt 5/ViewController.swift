@@ -55,5 +55,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
        return [task1,task2,task3]
     }
 
+    @IBAction func plusTapped(_ sender: AnyObject) {
+     performSegue(withIdentifier: "addSegue", sender: nil)
+    }
 }
 

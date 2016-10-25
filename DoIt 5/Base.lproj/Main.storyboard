@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ihm-Da-Umq">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Do It-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DoIt_5" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="DoIt_5" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -30,12 +30,59 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pfk-r7-ro5" secondAttribute="bottom" id="TqU-zZ-IC3"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Do It" id="H8M-tJ-8zw">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="lkB-jk-X7c"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9xj-WR-XdQ">
+                            <color key="tintColor" red="0.87688958644866943" green="0.095531766284335268" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="plusTapped:" destination="BYZ-38-t0r" id="XI7-bd-4QZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Pfk-r7-ro5" id="OK7-MD-vYt"/>
+                        <segue destination="e3k-yO-gq5" kind="show" identifier="addSegue" id="myl-Cv-hpK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="873" y="-645"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ae4-Kc-LN4">
+            <objects>
+                <viewController id="e3k-yO-gq5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4CU-vn-ur2"/>
+                        <viewControllerLayoutGuide type="bottom" id="bkr-dK-qyp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gyi-Kh-FUH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NaQ-hh-uSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660" y="-645"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7iV-KF-13t">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ihm-Da-Umq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nku-68-7wI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zMe-nT-AU0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6y-GS-eQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="-645.42728635682158"/>
         </scene>
     </scenes>
 </document>
