@@ -13,6 +13,7 @@
 		D45FD1D11DBFDBBB00604555 /* DoIt_5.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D45FD1CF1DBFDBBB00604555 /* DoIt_5.xcdatamodeld */; };
 		D45FD1D31DBFDBBB00604555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45FD1D21DBFDBBB00604555 /* Assets.xcassets */; };
 		D45FD1D61DBFDBBB00604555 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45FD1D41DBFDBBB00604555 /* LaunchScreen.storyboard */; };
+		D45FD1DE1DBFE01900604555 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45FD1DD1DBFE01900604555 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D45FD1D21DBFDBBB00604555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D45FD1D51DBFDBBB00604555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D45FD1D71DBFDBBB00604555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45FD1DD1DBFE01900604555 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				D45FD1C81DBFDBBB00604555 /* AppDelegate.swift */,
 				D45FD1CA1DBFDBBB00604555 /* ViewController.swift */,
+				D45FD1DD1DBFE01900604555 /* Task.swift */,
 				D45FD1CC1DBFDBBB00604555 /* Main.storyboard */,
 				D45FD1D21DBFDBBB00604555 /* Assets.xcassets */,
 				D45FD1D41DBFDBBB00604555 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45FD1DE1DBFE01900604555 /* Task.swift in Sources */,
 				D45FD1CB1DBFDBBB00604555 /* ViewController.swift in Sources */,
 				D45FD1D11DBFDBBB00604555 /* DoIt_5.xcdatamodeld in Sources */,
 				D45FD1C91DBFDBBB00604555 /* AppDelegate.swift in Sources */,
