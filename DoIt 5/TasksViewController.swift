@@ -79,7 +79,7 @@ class TasksViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         let nextVC = segue.destination  as!
             CompleteTaskViewController
             nextVC.task = sender as! Task
-        
+             nextVC.previousVC = self
         }
     }
 
